@@ -1,0 +1,734 @@
+.login_date_time {
+  white-space: nowrap;
+}
+div.star_on::after {
+  content: "\f005";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #ef8743;
+}
+.ets_gdpr_home {
+  clear: both;
+  display: block;
+}
+.ets_gdpr_locker {
+  clear: both;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  position: relative;
+  width: 100%;
+}
+#policy-link a.gdpr_viewmore:before {
+    content: "\f0e3";
+    font-family: Fontawesome;
+    margin-right: 5px;
+    font-size: 94%;
+    display: inline-block;
+}
+.text-del::before {
+  color: red;
+  content: "*";
+  margin-right: 3px;
+}
+.gdpr_notice .gdpr_notice_wap .gdpr_content {
+  margin-bottom: 0;
+}
+.gdpr_hook.login.clone .custom-checkbox {
+    margin-top: 25px;
+    float: left;
+    width: auto;
+}
+.gdpr_hook.login.clone {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.header-nav #_desktop_policy_link {
+  display: inline-block;
+  margin-left: 10px;
+}
+.gdpr_hook.contact.clone {
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding-left: 25%;
+}
+.gdpr_hook.subscribe.clone .custom-checkbox {
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 15px;
+}
+.gdpr_notice span.gdpr_number {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 2px;
+    vertical-align: 0;
+}
+.ets_gdpr_popup {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px 0 #aaa;
+  -webkit-box-shadow: 0 0 5px 0 #aaa;
+  left: 50%;
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+}
+.ets_gdpr_popup_close {
+  background-color: #666;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #333;
+  -webkit-box-shadow: 0 0 0 1px #333;
+  cursor: pointer;
+  font-size: 0;
+  height: 26px;
+  margin-right: -14px;
+  margin-top: -14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 26px;
+}
+.ets_gdpr_popup_close::after {
+  background-color: #fff;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  width: 16px;
+}
+.ets_gdpr_popup_close::before {
+  background-color: #fff;
+  content: "";
+  height: 16px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  width: 1px;
+}
+.ets_gdpr_popup_title {
+  border-bottom: 1px solid #eee;
+  color: #2fb5d2;
+  margin-bottom: 20px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+}
+.onp-sl-has-terms .onp-sl-group {
+  padding: 35px 15px 25px;
+}
+.ets_gdpr_locked{
+    padding: 0 15px;
+}
+.ets_gdpr_locker img{
+    max-width: 100%;
+    height: auto;
+}
+
+.ets_gdpr_close {
+  background-color: #444;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #666;
+  cursor: pointer;
+  height: 22px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 22px;
+}
+.ets_gdpr_close::after {
+  background-color: #fff;
+  content: "";
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  width: 1px;
+}
+.ets_gdpr_close::before {
+  background-color: #fff;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  width: 12px;
+}
+.ets_gdpr_sign_in_popup {
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 4px 0 #999;
+  -webkit-box-shadow: 0 0 4px 0 #999;
+  left: 50%;
+  max-width: 500px;
+  opacity: 0;
+  padding: 20px 30px;
+  pointer-events: none;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  transition: all 0.35s ease 0s;
+  -webkit-transition: all 0.35s ease 0s;
+  visibility: hidden;
+  width: 90%;
+  z-index: 100;
+}
+.ets_gdpr_sign_in_popup.actived,
+.ets_gdpr_sign_in_popup.active{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.gdpr.item > a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 1px;
+  outline: medium none !important;
+  padding: 10px 20px;
+  text-decoration: none !important;
+}
+.customer_information,
+.gdpr_no_address,
+.address-body {
+  background-color: #f6f6f6;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding: 20px 25px;
+}
+.gdpr_contact_message .gdpr_content,
+.gdpr_grid {
+  background-color: #f6f6f6;
+  border-color: #eee;
+  font-size: 14px;
+}
+.gdpr_grid {
+  margin-bottom: 30px;
+}
+.ets_gdpr_pagination {
+  padding: 0 15px 15px;
+}
+.gdpr_contact_message .gdpr_content .form_group span {
+  color: #666;
+}
+.gdpr_contact_message .gdpr_content label {
+  font-weight: 600;
+}
+.gdpr_account_data .back_to_list::before {
+  content: "\f112";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.ets-gdpr-panel .table-responsive,
+.gdpr_form_subscription {
+  background-color: #f6f6f6;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding: 15px 5px;
+}
+.gdpr_personal .view.btn,
+.gdpr_modification_log table .btn,
+.pointer.location .gdpr-link {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.gdpr_data_modified_group {
+  background-color: #e9e9e9;
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 16px 25px;
+}
+.gdpr_data_modified_group .gdpr_mod_info {
+  font-weight: 600;
+}
+.gdpr_data_modified_group .gdpr_data_modify {
+  margin-bottom: 0;
+  padding-left: 16px;
+}
+.pointer.location .gdpr-link{
+    background-color: #2fb5d2;
+    color: #fff;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+.pointer.location .gdpr-link:hover{
+    background-color: #2592a9;
+}
+.gdpr_subscriptions .btn.btn-unsubscribe {
+  background-color: #c7c7c7;
+  color: #fff;
+  min-width: 135px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.gdpr_subscriptions .btn.btn-unsubscribe:hover {
+  background-color: #b7b7b7;
+}
+.gdpr_note {
+  margin-bottom: 30px;
+}
+.gdpr_delete_my_data .gdpr_content {
+  border: medium none;
+  overflow: visible;
+  padding-left: 0;
+  padding-right: 0;
+}
+.gdpr_datatype {
+  margin-bottom: 0;
+}
+.gdpr_delete_my_data .form-footer {
+  margin-top: 30px;
+}
+#module-ets_gdpr-gdpr tbody tr:nth-child(2n+1) {
+  background-color: #f0f0f0;
+}
+.gdpr_modification_log_detail .panel-footer {
+  margin-top: 30px;
+}
+.gdpr_wrapper.footer.bottom_right {
+  bottom: 15px;
+  left: auto;
+  right: 15px;
+}
+.gdpr_delete_my_data label {
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.gdpr_delete_my_data .gdpr_datatype_item label {
+  font-weight: normal;
+  margin-bottom: 7px;
+}
+.address-body .address:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.gdpr_personal .badge,
+.ets-gdpr-panel .badge{
+  background-color: #2fb5d2;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  margin-left: 5px;
+  text-align: center;
+  vertical-align: 2px;
+  width: 22px;
+  padding: 0;
+}
+.gdpr_orders .table.configuration,
+.gdpr_orders .list-empty-msg
+.gdpr_messages .table.configuration,
+.gdpr_messages .list-empty-msg
+.gdpr_address .table.configuration,
+.gdpr_address .list-empty-msg {
+  margin-bottom: 0;
+}
+.mysubscription .fa.fa-times,
+.partner i.fa.fa-times {
+  color: red;
+}
+.gdpr_subscriptions .fa.fa-check {
+  color: #5ad15c;
+}
+.gdpr_title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.gdpr.item:hover > a,
+.gdpr.item.actived > a{
+    background-color: #f0f0f0;
+}
+.partner i {
+  color: red;
+}
+.gdpr_overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.gpdr_content {
+  position: relative;
+}
+.gdpr_wrapper {
+  position: relative;
+}
+.gdpr_wrapper.footer {
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  z-index: 10000;
+}
+.gdpr_wrapper.top {
+  padding: 20px;
+  text-align: center;
+  z-index: 100;
+  display: none;
+}
+body > .gdpr_wrapper.top{
+    display: block;
+}
+.gdpr_button .gdpr_btn_accept {
+  font-size: 13px;
+  line-height: 100%;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+.gdpr_notice .gdpr_button .gdpr_btn_accept {
+  border: 1px solid;
+  line-height: 32px;
+  padding: 0 10px;
+}
+.gdpr_button .gdpr_btn_decline {
+  border: 1px solid #ddd;
+  color: #999;
+  font-size: 13px;
+  height: 32px;
+  line-height: 30px;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+}
+.gdpr_account_data #left-column {
+  border-right: 1px solid #ddd;
+}
+.gdpr_account_data {
+  display: flex;
+  display: -webkit-flex;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.gdpr_info .alert.alert-info,
+.gdpr_delete_my_data .alert.alert-info {
+  background-color: #dcf3f9;
+  color: #2fb5d2;
+  margin-bottom: 30px;
+  padding-left: 55px;
+  position: relative;
+  border-color: #2fb5d2;
+  font-weight: normal;
+}
+.gdpr_account_data .alert.alert-warning {
+  background-color: #fff3d7;
+  border-color: transparent transparent transparent #fcc94f;
+  border-style: none none solid solid;
+  border-width: medium medium 1px 5px;
+  color: #e5a40a;
+  font-weight: normal;
+}
+.ets_gdpr_pagination .links {
+  float: right;
+}
+.ets_gdpr_pagination a, .ets_gdpr_pagination b {
+  width: 22px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  background-color: #ddd;
+  color: #999999;
+}
+.ets_gdpr_pagination a:hover{
+  background-color: #cccccc;
+}
+.ets_gdpr_pagination b {
+  background-color: #2fb5d2;
+  color: #fff;
+}
+.form_password {
+  max-width: 300px;
+}
+.gdpr_account_data .alert.alert-info::before,
+.gdpr_delete_my_data .alert.alert-info:before {
+  content: "\f059";
+  font-family: FontAwesome;
+  font-size: 33px;
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.gdpr_general_notice li.gdpr_notice_item {
+    margin-bottom: 20px;
+    display: block;
+    padding-bottom: 0!important;
+}
+.gdpr_modification_log .panel.ets-gdpr-panel {
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+}
+span.gdpr_desc.item, span.gdpr_desc.item p,
+.gdpr_general_top, .gdpr_general_top p, .gdpr_general_bottom, .gdpr_general_bottom p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.75;
+}
+.custom-checkbox div.checker input[type="checkbox"]{
+    opacity: 1;
+    -webkit-appearance: checkbox;
+        appearance: checkbox;
+    outline: none!important;
+    -webkit-outline: none!important;
+}
+.custom-checkbox div.checker, .custom-checkbox div.checker span{
+    background: transparent!important;
+}
+.gdpr_title {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 14px;
+}
+.ets-gdpr-panel .panel-heading {
+  padding: 0;
+}
+.gdpr_notice {
+  align-items: center;
+  -webkit-align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  left: 0;
+  position: fixed;
+  opacity: 1;
+  visibility: hidden;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+.gdpr_notice.actived {
+  opacity: 1;
+  visibility: visible;
+}
+.gdpr_notice_wap {
+  background-color: #fff;
+  border: 8px solid #d3d3d3;
+  max-width: 90%;
+  padding: 80px 30px 80px;
+  position: relative;
+  width: 785px;
+}
+.gdpr_notice_wap > .gdpr_title {
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  font-size: 18px;
+  height: 45px;
+  justify-content: center;
+  -webkit-justify-content: center;
+  left: 0;
+  margin-bottom: 25px;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 14px;
+}
+.gdpr_notice_wap .gdpr_button {
+  bottom: 25px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.gdpr_notice .gdpr_notice_wap .gdpr_button {
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding: 0 20px;
+}
+.gdpr_button {
+  display: inline-block;
+}
+.gdpr_notice .gdpr_button a.btn {
+  margin: 5px 5px 0;
+  min-width: 170px;
+}
+.gdpr_welcome {
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+}
+.gdpr_title p {
+  color: #fff;
+  display: inline-block;
+  font-size: inherit;
+  margin: 0;
+}
+.gdpr_button .gdpr_btn_decline:hover {
+    background-color: #208094;
+    border: 1px solid #208094;
+    color: #fff;
+}
+.gdpr_button .gdpr_btn_accept:hover {
+  background-color: #208094 !important;
+}
+.gdpr_btn_deline.btn:hover {
+  background-color: #2fb5d2;
+  border-color: #2fb5d2;
+  color: #fff;
+}
+.gdpr_content::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.gdpr_content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+.gdpr_content::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+.gdpr_content::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.gdpr_personal .btn,
+.gdpr_account_data .btn {
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.gdpr_welcome .gdpr_title {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.gdpr_subscriptions .btn {
+  font-size: 14px;
+  font-weight: normal;
+  min-width: 135px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.gdpr_personal .gdpr_title,
+.gdpr_account_data .gdpr_title,
+.ets-gdpr-panel .gdpr_title {
+  font-size: 18px;
+  margin-top: 0;
+}
+.gdpr_personal .alert {
+  margin-bottom: 0;
+}
+.gdpr_personal .table.configuration {
+  margin: 0;
+}
+.ets_gdpr {
+  list-style: outside none none;
+}
+.ets_gdpr > #gdpr-link {
+  padding: 0 !important;
+  width: 100%;
+}
+.gdpr_general_notice {
+    padding-top: 12px;
+}
+.gdpr_content {
+  border: 1px solid #d3d3d3;
+  height: 100%;
+  margin-bottom: 30px;
+  overflow: auto;
+  padding: 20px 40px;
+  position: relative;
+  text-align: left;
+}
+.gdpr_wrapper.bottom_left {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.star_content .icon {
+  color: orange;
+}
+.ets-gdpr-panel .pointer.grade {
+  width: 110px;
+}
+.ets-gdpr-panel .pointer.grade .fa.fa-star,
+.fa-star {
+  color: orange;
+  margin: 0 1px;
+}
+.comments_note {
+  display: inline-block;
+}
+@media (max-width: 479px){
+    .gdpr_notice_wap {
+      padding: 65px 20px 90px;
+    }
+    .gdpr_notice_wap .gdpr_button {
+      bottom: 8px;
+    }
+    .gdpr_notice .gdpr_notice_wap .gdpr_content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .gdpr_notice .gdpr_button a.btn {
+      width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

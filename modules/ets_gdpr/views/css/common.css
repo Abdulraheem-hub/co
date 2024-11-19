@@ -1,0 +1,174 @@
+.ets_gdpr_social_item {
+  display: inline-block;
+}
+.ets_gdpr_social_btn {
+  background-color: #ddd;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  margin: 0 5px 5px 0;
+  overflow: hidden;
+  padding: 8px 10px;
+}
+.ets_gdpr_social_btn.rounded {
+    border-radius: 3px;
+}
+.ets_gdpr_social_btn.rounded.large {
+    border-radius: 4px;
+}
+.ets_gdpr_social_btn i {
+  background-color: #bbb;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  line-height: 36px;
+  margin: -8px 7px -10px -10px;
+  padding: 0 5px;
+  text-align: center;
+  width: 32px;
+}
+.facebook i {
+  background-color: #304e8c;
+}
+.facebook .ets_gdpr_social_btn {
+  background-color: #5373be;
+}
+.google .ets_gdpr_social_btn {
+  background-color: #d34836;
+}
+.google .ets_gdpr_social_btn i {
+  background-color: #ca3e2c;
+}
+.twitter i {
+  background-color: #0477a0;
+}
+.twitter .ets_gdpr_social_btn {
+  background-color: #0084b4;
+}
+.linkedin .ets_gdpr_social_btn {
+  background-color: #0077b5;
+}
+.linkedin .ets_gdpr_social_btn i {
+  background-color: #036fa7;
+}
+.instagram .ets_gdpr_social_btn {
+  background-color: #e65358;
+}
+.tumblr .ets_gdpr_social_btn {
+  background-color: #405167;
+}
+.tumblr i {
+  background-color: #35465c;
+}
+.windowslive .ets_gdpr_social_btn {
+  background-color: #09b6fa;
+}
+.windowslive i {
+  background-color: #00adf1;
+}
+.yahoo .ets_gdpr_social_btn {
+  background-color: #783b8a;
+}
+.yahoo i {
+  background-color: #6b2e7d;
+}
+.wordpress .ets_gdpr_social_btn {
+  background-color: #468cc8;
+}
+.wordpress i {
+  background-color: #357bb7;
+}
+.ets_gdpr_social_btn.flat {
+  padding-right: 0;
+}
+.ets_gdpr_social_btn.flat i {
+  margin-right: 0;
+}
+.ets_gdpr_social_btn.img {
+  background-color: transparent;
+  padding: 0;
+}
+.instagram .ets_gdpr_social_btn i {
+  background-color: #d7446b;
+}
+.ets_sl_locker img {
+  max-width: 100%;
+}
+.ets_gdpr_social_btn.small.img .ets_gdpr_btn_img {
+  width: 24px;
+}
+.ets_gdpr_social_btn.meidum.img .ets_gdpr_btn_img {
+  width: 35px;
+}
+.ets_gdpr_social_btn.large.img .ets_gdpr_btn_img {
+  width: 45px;
+}
+.ets_gdpr_social_btn.small.flat {
+  height: 24px;
+  padding: 0;
+  width: 24px;
+}
+.ets_gdpr_social_btn.small.flat i {
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0;
+  width: 100%;
+}
+.ets_gdpr_social_btn.medium.flat {
+  height: 35px;
+  padding: 0;
+  width: 35px;
+}
+.ets_gdpr_social_btn.medium.flat i {
+  font-size: 16px;
+  line-height: 35px;
+  margin: 0;
+  width: 100%;
+}
+.ets_gdpr_social_btn.large.flat {
+  height: 45px;
+  padding: 0;
+  width: 45px;
+}
+.ets_gdpr_social_btn.large.flat i {
+  font-size: 18px;
+  line-height: 45px;
+  margin: 0;
+  width: 100%;
+}
+.ets_gdpr_social_btn.medium {
+  height: 35px;
+}
+.ets_gdpr_social_btn.small {
+  height: 24px;
+}
+.ets_gdpr_social_btn.large {
+  height: 45px;
+}
+
+.ets_gdpr_social_btn.small {
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+.ets_gdpr_social_btn.small i {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: -5px;
+  margin-top: 0;
+  width: 26px;
+}
+.ets_gdpr_social_btn.large i {
+  font-size: 20px;
+  line-height: 45px;
+  width: 45px;
+}
+.ets_gdpr_social_btn.large {
+  font-size: 16px;
+  height: 45px;
+  line-height: 28px;
+  padding-right: 15px;
+}

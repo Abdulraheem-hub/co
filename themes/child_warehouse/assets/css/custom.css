@@ -1,0 +1,254 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+.cbp-hrmenu > ul > li {
+  display: inline-block;
+  float: none;
+}
+.cbp-horizontal > ul {
+  font-size: 0;
+  text-align: center;
+}
+
+/* add background colors in variouse boxes  - start */
+.product-info-row {
+  background: #fff;
+  margin: 0;
+  padding: 2rem 1rem;
+  margin-bottom: 3rem;
+  border: 1px solid #f0f0f0;
+}
+
+#cbp-hrmenu1 {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+}
+
+body#checkout section.checkout-step,
+.cart-grid-right .cart-summary {
+  background: #fff;
+}
+
+.cart-items {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+}
+.cart-item {
+  padding: 1rem;
+}
+
+.products-selection {
+  background: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #f0f0f0;
+}
+/* add background colors in variouse boxes  - end */
+
+.faa-parent.animated-hover:hover > .faa-wrench,
+.faa-wrench.animated,
+.faa-wrench.animated-hover:hover {
+  -webkit-animation: wrench 2.5s ease infinite;
+  animation: wrench 2.5s ease infinite;
+  -webkit-transform-origin-x: 90%;
+  -webkit-transform-origin-y: 35%;
+  -webkit-transform-origin-z: initial;
+}
+@keyframes wrench {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+  8% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+  10% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  18% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  20% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  28% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  30% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  38% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  40% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  48% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  50% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  58% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  60% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  68% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+  100%,
+  75% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+.contact-form {
+  background: #98c8ea26;
+  margin: 20px;
+  border: 1px solid #03a6f0;
+  padding: 10px;
+}
+.contact-form footer.form-footer {
+  display: flex;
+  justify-content: center;
+}
+/*for home page heading of 3 blocks buy with confidence, Hazzle free return..... */
+.custom-header a {
+  color: #03a6f0 !important;
+}
+.custom-header a i {
+  color: #ea4330 !important;
+}
+/*bedge of Availability*/
+.product-available {
+  background: #03a6f0;
+  font-weight: normal;
+  font-size: inherit;
+}
+
+/*product feature right side in Product page*/
+.product-features {
+  font-size: smaller;
+}
+.product-features > dl.data-sheet dd.value,
+.product-features > dl.data-sheet dt.name {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+/*header top in mobile shows left, keep it center*/
+.justify-content-between {
+  /* -ms-flex-pack: center !important;*/
+  justify-content: center !important;
+}
+/*footer top features block, hide heading of it*/
+#iqithtmlandbanners-block-6 h5 {
+  display: none;
+}
+#ribon_features {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #ribon_features {
+    text-align: left;
+  }
+  #ribon_features div {
+    padding-top: 5px;
+  }
+}
+.custom-checkbox input[type="checkbox"] + span:not(.color),
+.custom-radio {
+  border-color: #05a6f1;
+}
+/*reduce spaces between Information li in footer*/
+.block-iqitlinksmanager-1 li {
+  margin-bottom: auto !important;
+}
+
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+.right-border {
+  border-right: 1px solid hsla(0, 0%, 63%, 0.25);
+}
+.login-bg {
+  background: #f9f8f8;
+  padding: 30px;
+}
+.register-form {
+  margin-top: 15px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  /* background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;*/
+  display: grid;
+  border: none;
+}
+.dropbtn i {
+  font-size: 35px;
+  display: block;
+  padding-bottom: 3px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown_myaccount {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e0f1ff;
+  border: 1px solid #03a6f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown_myaccount:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.dropdown_myaccount:hover .dropbtn {background-color: #3e8e41;}*/
+.phone-error-msg {
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: #dc3545;
+}

@@ -1,0 +1,38 @@
+# Ignore everything
+*
+
+# track sub folders
+!*/
+
+# Do not ignore the .gitignore file itself
+!.gitignore
+
+# Include all files inside the above directories
+!app/config/**
+!config/**
+!themes/**
+!override/**
+!modules/**
+!mails/**
+
+# Ignore these modules
+modules/blockreassurance/**
+modules/blockwishlist/**
+modules/contactform/**
+modules/dash*/**
+modules/followup*
+modules/gamification/**
+modules/gridhtml/**
+modules/klaviyo*/**
+modules/pagesnotfound/**
+modules/ps*
+modules/referralprogram*
+modules/stats*
+modules/welcome*
+
+# Ignore classic themes
+themes/*classic*
+
+
+# Ignore backup files
+*.bak
