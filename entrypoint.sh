@@ -2,7 +2,7 @@
 set -e
 
 echo "Copying custom files from repository to /var/www/html..."
-cp -rf /repo/* /var/www/html/
+cp -rf /* /var/www/html/
 
 echo "Fixing permissions..."
 chown -R www-data:www-data /var/www/html
