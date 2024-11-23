@@ -12,7 +12,8 @@ services:
       - PS_INSTALL_AUTO=0                # Disable automatic installation
     volumes:
       - prestashop_data:/var/www/html    # Persistent PrestaShop data
-    entrypoint: ["entrypoint.sh"]  # Custom entrypoint
+      - ${PWD}:/app  # This is where Coolify places your repo files
+    entrypoint: ["/bin/bash", "/app/entrypoint.sh"]  # Updated path to entrypoint.sh
 
 networks:
   default:                               # Define the default network for fallback
