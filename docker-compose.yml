@@ -5,21 +5,21 @@ services:
     image: prestashop/prestashop:8.2
     container_name: prestashop
     environment:
-      - DB_SERVER=mariaDB
-      - DB_NAME=prestashop_db
-      - DB_USER=prestashop_user
-      - DB_PASSWORD=yourpassword
-      - PS_INSTALL_AUTO=0 # Disable automatic installation
+      - DB_SERVER=${DB_SERVER}           # Database server from Coolify
+      - DB_NAME=${DB_NAME}               # Database name from Coolify
+      - DB_USER=${DB_USER}               # Database user from Coolify
+      - DB_PASSWORD=${DB_PASSWORD}       # Database password from Coolify
+      - PS_INSTALL_AUTO=0                # Disable automatic installation
     volumes:
-      - prestashop_data:/var/www/html # Persistent PrestaShop data
-      - ./:/repo:ro # Mount the root of the repository as read-only
-    entrypoint: ["/repo/entrypoint.sh"] # Custom entrypoint
+      - prestashop_data:/var/www/html    # Persistent PrestaShop data
+      - ./:/repo:ro                      # Mount the repository root
+    entrypoint: ["/repo/entrypoint.sh"]  # Custom entrypoint
     networks:
-      - existing_network
+      - ${NETWORK_NAME}                  # Dynamically set network from Coolify
 
 networks:
-  existing_network:
-    external: true
-    
+  default:                               # Define the default network for fallback
+    driver: bridge
+
 volumes:
   prestashop_data:
