@@ -8,6 +8,7 @@
 !.gitignore
 !docker-compose.yml
 !entrypoint.sh
+!/DockerFile
 
 # Include all files inside the above directories
 !app/config/**
