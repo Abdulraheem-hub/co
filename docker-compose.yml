@@ -12,7 +12,6 @@ services:
       - PS_INSTALL_AUTO=0                # Disable automatic installation
     volumes:
       - prestashop_data:/var/www/html    # Persistent PrestaShop data
-    entrypoint: ["/bin/bash", "/entrypoint.sh"]  # Custom entrypoint
 
 networks:
   default:                               # Define the default network for fallback
