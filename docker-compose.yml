@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  prestashop:
+    image: prestashop/prestashop:8.2
+    container_name: prestashop
+    environment:
+      - DB_SERVER=mariaDB
+      - DB_NAME=prestashop_db
+      - DB_USER=prestashop_user
+      - DB_PASSWORD=yourpassword
+      - PS_INSTALL_AUTO=0 # Disable automatic installation
+    volumes:
+      - prestashop_data:/var/www/html # Persistent PrestaShop data
+      - ./:/repo:ro # Mount the root of the repository as read-only
+    entrypoint: ["/repo/entrypoint.sh"] # Custom entrypoint
+    networks:
+      - existing_network
+
+networks:
+  existing_network:
+    external: true
+    
+volumes:
+  prestashop_data:

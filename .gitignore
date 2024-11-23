@@ -6,6 +6,8 @@
 
 # Do not ignore the .gitignore file itself
 !.gitignore
+!docker-compose.yml
+!entrypoint.sh
 
 # Include all files inside the above directories
 !app/config/**
