@@ -14,8 +14,6 @@ services:
       - prestashop_data:/var/www/html    # Persistent PrestaShop data
       - ./:/repo:ro                      # Mount the repository root
     entrypoint: ["/repo/entrypoint.sh"]  # Custom entrypoint
-    networks:
-      - ${NETWORK_NAME}                  # Dynamically set network from Coolify
 
 networks:
   default:                               # Define the default network for fallback
