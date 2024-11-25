@@ -10,10 +10,19 @@ RUN apt-get update && apt-get install -y \
   unzip \
   && rm -rf /var/lib/apt/lists/*
 
-# Copy your repository files
-COPY . /var/www/html/
+# Create a directory for your custom files
+RUN mkdir -p /var/www/html/custom_files
 
-# Set proper permissions
+# Copy only your custom files
+COPY ./themes/ /var/www/html/themes/
+COPY ./modules/ /var/www/html/modules/
+COPY ./override/ /var/www/html/override/
+COPY ./config/ /var/www/html/config/
+COPY ./app/config/ /var/www/html/app/config/
+COPY ./mails/ /var/www/html/mails/
+# Add other directories you need to update
+
+# Set proper permissions for copied files
 RUN chown -R www-data:www-data /var/www/html/ && \
   chmod -R 755 /var/www/html/
 
