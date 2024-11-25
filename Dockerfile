@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 # Copy only the changed files from the repository to PrestaShop
 COPY ./ /tmp/repo/
-RUN rsync -a --ignore-errors /tmp/repo/ /var/www/html/ && \
+RUN rsync -a  /tmp/repo/ /var/www/html/ && \
     rm -rf /tmp/repo/
 
 # Set proper permissions
