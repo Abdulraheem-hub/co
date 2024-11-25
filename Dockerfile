@@ -27,5 +27,3 @@ EXPOSE 80
 
 # Use the default PrestaShop entrypoint
 CMD ["apache2-foreground"]
-
-##
