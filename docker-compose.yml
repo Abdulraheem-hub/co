@@ -1,31 +1,23 @@
-version: '3.1'
+version: '3.9'
 
 services:
   prestashop:
-    image: prestashop/prestashop:latest
+    image: prestashop/prestashop:8.2
     container_name: prestashop
-    volumes:
-      - prestashop_data:/var/www/html  # Persistent volume for PrestaShop files
-    ports:
-      - "8080:80"
     environment:
-      PS_DEV_MODE: "1"  # Enable debug mode (optional)
-      DB_SERVER: db      # Link to the database service
-
-  db:
-    image: mariadb:10.6
-    container_name: mariadb
+      - DB_SERVER=mariaDB
+      - DB_NAME=prestashop_db
+      - DB_USER=prestashop_user
+      - DB_PASSWORD=yourpassword
+      - PS_INSTALL_AUTO=0 # Disable automatic installation
     volumes:
-      - db_data:/var/lib/mysql  # Persistent volume for database
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: prestashop
-      MYSQL_USER: prestashop
-      MYSQL_PASSWORD: prestashop
+      - prestashop_data:/var/www/html # Persistent PrestaShop data
+    networks:
+      - existing_network
 
+networks:
+  existing_network:
+    external: true
+    
 volumes:
-  prestashop_data:  # Volume for PrestaShop
-  db_data:          # Volume for MariaDB
-
-
- 
+  prestashop_data:
