@@ -6,6 +6,8 @@ services:
     container_name: prestashop
     volumes:
       - prestashop_data:/var/www/html  # Persistent volume for PrestaShop files
+    ports:
+      - "8080:80"
     environment:
       PS_DEV_MODE: "1"  # Enable debug mode (optional)
       DB_SERVER: db      # Link to the database service
