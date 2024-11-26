@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  prestashop:
+    image: prestashop/prestashop:latest
+    container_name: prestashop
+    volumes:
+      - prestashop_data:/var/www/html  # Persistent volume for PrestaShop files
+    environment:
+      PS_DEV_MODE: "1"  # Enable debug mode (optional)
+      DB_SERVER: db      # Link to the database service
+
+  db:
+    image: mariadb:10.6
+    container_name: mariadb
+    volumes:
+      - db_data:/var/lib/mysql  # Persistent volume for database
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: prestashop
+      MYSQL_USER: prestashop
+      MYSQL_PASSWORD: prestashop
+
+volumes:
+  prestashop_data:  # Volume for PrestaShop
+  db_data:          # Volume for MariaDB
+
+
+ 
