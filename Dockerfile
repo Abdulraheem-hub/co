@@ -4,35 +4,39 @@ FROM prestashop/prestashop:8.2
 # Set working directory
 WORKDIR /var/www/html
 
-# Install additional dependencies if needed
+# Install necessary packages
 RUN apt-get update && apt-get install -y \
   git \
   unzip \
   && rm -rf /var/lib/apt/lists/*
 
-# Create a directory for your custom files
-RUN mkdir -p /var/www/html/custom_files
+# Create a directory for checking installation status
+RUN mkdir -p /var/www/html/installation_status
 
-# Copy only your custom files
-COPY ./themes/ /var/www/html/themes/
-COPY ./modules/ /var/www/html/modules/
-COPY ./override/ /var/www/html/override/
-COPY ./config/ /var/www/html/config/
-COPY ./app/config/ /var/www/html/app/config/
-COPY ./mails/ /var/www/html/mails/
-# Add other directories you need to update
+# Copy your custom files from the repository
+COPY ./themes/ /tmp/custom/themes/
+COPY ./modules/ /tmp/custom/modules/
+COPY ./override/ /tmp/custom/override/
+COPY ./config/ /tmp/custom/config/
+COPY ./mails/ /tmp/custom/mails/
+COPY ./app/config/ /tmp/custom/app/config/
 
-# Set proper permissions for copied files
-RUN chown -R www-data:www-data /var/www/html/ && \
-  chmod -R 755 /var/www/html/
+# Set proper permissions
+RUN chown -R www-data:www-data /var/www/html/ /tmp/custom/ && \
+  chmod -R 755 /var/www/html/ /tmp/custom/
 
 # PrestaShop specific permissions
-RUN if [ -d /var/www/html/var ]; then chmod -R 777 /var/www/html/var; fi && \
-  if [ -d /var/www/html/app/config ]; then chmod -R 777 /var/www/html/app/config; fi && \
-  if [ -d /var/www/html/img ]; then chmod -R 777 /var/www/html/img; fi
+RUN chmod -R 777 /var/www/html/var || true && \
+  chmod -R 777 /var/www/html/app/config || true && \
+  chmod -R 777 /var/www/html/img || true
+
+# Copy entrypoint script
+COPY entrypoint.sh /usr/local/bin/custom-entrypoint.sh
+RUN chmod +x /usr/local/bin/custom-entrypoint.sh
 
 # Expose port 80
 EXPOSE 80
 
-# Use the default PrestaShop entrypoint
+# Use custom entrypoint
+ENTRYPOINT ["custom-entrypoint.sh"]
 CMD ["apache2-foreground"]
