@@ -169,6 +169,7 @@ class AdminIqitElementorController extends ModuleAdminController
             if (!$returnObject) {
                 return false;
             }
+            
 
             Tools::redirectAdmin($this->context->link->getAdminLink('Admin'.$this->name) . '&id_iqit_elementor_landing='.$returnObject->id .'&updateiqit_elementor_landing');
         }
