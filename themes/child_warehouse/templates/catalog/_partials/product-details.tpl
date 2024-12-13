@@ -49,20 +49,28 @@
     {if $product.show_quantities}
         <div class="product-quantities">
             <label class="label">{l s='In stock' d='Shop.Theme.Catalog'}</label>
-            <span data-stock="{$product.quantity}" data-allow-oosp="{$product.allow_oosp}">{$product.quantity} {$product.quantity_label}</span>
+            <span data-stock="{$product.quantity}" data-allow-oosp="{$product.allow_oosp}">
+                {if $product.quantity > 99}
+                    99+
+                {else}
+                    {$product.quantity}
+                {/if}
+                {$product.quantity_label}
+            
+            </span>
         </div>
     {/if}
 {/block}
 
- {block name='product_condition'}
-    {if $product.condition}
-        <div class="product-condition">
-            <label class="label">{l s='Condition' d='Shop.Theme.Catalog'} </label>
-            <link  href="{$product.condition.schema_url}"/>
-            <span>{$product.condition.label}</span>
-        </div>
-    {/if}
-{/block} 
+<!-- {block name='product_condition'}-->
+<!--    {if $product.condition}-->
+<!--        <div class="product-condition">-->
+<!--            <label class="label">{l s='Condition' d='Shop.Theme.Catalog'} </label>-->
+<!--            <link  href="{$product.condition.schema_url}"/>-->
+<!--            <span>{$product.condition.label}</span>-->
+<!--        </div>-->
+<!--    {/if}-->
+<!--{/block} -->
 
 {* if product have specific references, a table will be added to product details section *}
 {block name='product_specific_references'}

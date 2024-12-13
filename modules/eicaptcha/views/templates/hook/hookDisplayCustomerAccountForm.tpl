@@ -25,7 +25,7 @@
 
 <div class="form-group row">
     {if $captchaVersion == 2}
-        <label class="col-md-3 form-control-label">{l s='Captcha' mod='eicaptcha'}</label>
+        <label class="col-md-2 form-control-label">{l s='Captcha' mod='eicaptcha'}</label>
         <div class="col-md-9">
             {**
              * Le contenu du captcha est automatiquement ajouté dans le selecteur #captcha-box

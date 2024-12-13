@@ -1,12 +1,12 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => '127.0.0.1',
+    'database_host' => 'db',
     'database_port' => '',
-    'database_name' => 'p82',
-    'database_user' => 'root',
-    'database_password' => '',
-    'database_prefix' => 'px2_',
+    'database_name' => 'cotest',
+    'database_user' => 'testing',
+    'database_password' => 'testing',
+    'database_prefix' => 'co_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',
     'mailer_host' => '127.0.0.1',
