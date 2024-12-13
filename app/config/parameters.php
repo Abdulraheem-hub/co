@@ -3,9 +3,9 @@
   array (
     'database_host' => 'db',
     'database_port' => '',
-    'database_name' => 'prestashop',
-    'database_user' => 'prestashop',
-    'database_password' => 'prestashop',
+    'database_name' => 'cotest',
+    'database_user' => 'testing',
+    'database_password' => 'testing',
     'database_prefix' => 'co_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',

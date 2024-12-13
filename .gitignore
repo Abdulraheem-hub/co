@@ -11,8 +11,6 @@
 !/Dockerfile
 
 # Include all files inside the above directories
-!app/config/**
-!config/**
 !themes/**
 !override/**
 !modules/**
